@@ -1,0 +1,61 @@
+.image {
+  height: 200px;
+  margin: 30px;
+}
+
+.form__block {
+}
+
+.form__file {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.file {
+  padding: 0;
+  width: 250px;
+  border: none;
+}
+
+.chb {
+  filter: grayscale(100%);
+}
+.ivert {
+  filter: invert(100%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.filter {
+  filter: brightness(50%);
+}
+
+.but_margin {
+  padding: 0;
+  margin: 20px;
+}
+
+input {
+  width: 50px;
+  height: 30px;
+  padding: 0 20px;
+}
+
+.but__block {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#list {
+  display: flex;
+  justify-content: center;
+}
+
+.input__width {
+  margin-right: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-center">
+            <form class="form__block " action="">
+            <div class="form__file">
+                <input type="file" id="files" class="file" name="files[]" multiple accept="image/*" />
+            </div>    
+                <output id="list"></output> 
+
+        <div class="but__block">
+            <button type="button" onclick="makeGreyScale()" class="form-control but_margin">b/w</button>
+            <button type="button" onclick="makeIvert()" class="form-control but_margin">invert</button>
+            <button type="button" onclick="makeSepia()" class="form-control but_margin">sepia</button>
+            <button type="button" onclick="makeFilter()" class="form-control but_margin">filter</button>
+            <button type="button" onclick="clearFilters()" class="form-control but_margin">RESET</button>
+            <input  type="number" value="" onchange="changeWidth()" placeholder="width" class="input__width form-control">
+            <input  type="number" value="" onchange="changeHeight()" placeholder="height" class="input__height form-control">
+            
+        </div>
+            </form>
+    
+        </div>
+    </div>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
