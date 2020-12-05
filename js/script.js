@@ -1,7 +1,9 @@
 const input = document.querySelector("input[type='file']"),
     output = document.getElementById('list');
 
-
+function selectImage() {
+    document.getElementById('files').click()
+}
 
 function handleFileSelect(evt) {
     let files = evt.target.files;
@@ -75,6 +77,7 @@ function changeHeight() {
     img.forEach(el => {
         const height = inp + "px"
         el.style.height = height;
+        inp.reset()
     })
 }
 
@@ -90,12 +93,18 @@ function changeWidth() {
 
 function clearFilters() {
     const img = document.querySelectorAll('img');
+    const inpW = document.querySelector('.input__width')
+    const inpH = document.querySelector('.input__height')
     img.forEach(el => {
         el.className = '';
-    el.classList.add('image')
+        el.classList.add('image')
+        el.style.width = "auto";
+        el.style.height = "200px";
 
     })
+
 }
+
 
 
 

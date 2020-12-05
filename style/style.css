@@ -8,15 +8,18 @@
 
 .form__file {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  width: 200px;
   display: flex;
   justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffc107;
+  cursor: pointer;
 }
 
 .file {
-  padding: 0;
-  width: 250px;
-  border: none;
+  display: none;
 }
 
 .chb {
@@ -49,13 +52,37 @@ input {
   display: flex;
   align-items: center;
   display: none;
+  justify-content: center;
 }
 
 #list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .input__width {
   margin-right: 10px;
+}
+
+.iw {
+  width: 100px;
+}
+
+.bg {
+  background-color: cadetblue;
+  height: 100%;
+  opacity: 1;
+  overflow: auto;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  .but__block {
+    display: flex;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

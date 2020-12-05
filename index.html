@@ -9,23 +9,27 @@
 </head>
 <body>
 
-    <div class="container-fluid ">
+    <div class="container-fluid bg">
         <div class="row d-flex justify-content-center">
             <form class="form__block " action="">
-            <div class="form__file">
+            <div class="form__file" onclick="selectImage()">
                 <input type="file" id="files" class="file" name="files[]" multiple accept="image/*" />
+                select image
             </div>    
                 <output id="list"></output> 
 
         <div class="but__block">
-            <button type="button" onclick="makeGreyScale()" class="form-control but_margin">b/w</button>
-            <button type="button" onclick="makeIvert()" class="form-control but_margin">invert</button>
-            <button type="button" onclick="makeSepia()" class="form-control but_margin">sepia</button>
-            <button type="button" onclick="makeFilter()" class="form-control but_margin">filter</button>
-            <button type="button" onclick="clearFilters()" class="form-control but_margin">RESET</button>
-            <input  type="number" value="" onchange="changeWidth()" placeholder="width" class="input__width form-control">
-            <input  type="number" value="" onchange="changeHeight()" placeholder="height" class="input__height form-control">
-            
+            <button type="button" onclick="makeGreyScale()" class="btn btn-warning but_margin">b/w</button>
+            <button type="button" onclick="makeIvert()" class="btn btn-warning but_margin">invert</button>
+            <button type="button" onclick="makeSepia()" class="btn btn-warning but_margin">sepia</button>
+            <button type="button" onclick="makeFilter()" class="btn btn-warning but_margin">filter</button>
+            <button type="button" onclick="clearFilters()" class="btn btn-warning but_margin">RESET</button>
+            <div>
+                <input  type="number" value="" onchange="changeWidth()" placeholder="width" class="input__width iw btn btn-warning">
+                <input  type="number" value="" onchange="changeHeight()" placeholder="height" class="iw input__height btn btn-warning">
+                
+            </div>
+           
         </div>
             </form>
     
